@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="melia"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-04-30 12:22:25 p.&#160;m."/>
+        <attribute name="created" value="bWVsaWE7UEVSQ0hJVEFQQzsyMDI0LTA0LTMwOzEyOjA4OjMwIHAuwqBtLjsyODQ4"/>
+        <attribute name="edited" value="bWVsaWE7UEVSQ0hJVEFQQzsyMDI0LTA0LTMwOzEyOjIyOjI1IHAuwqBtLjsxOzI5NTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="interes" type="Real" array="False" size=""/>
+            <declare name="cantMeses" type="Integer" array="False" size=""/>
+            <assign variable="interes" expression="1.02"/>
+            <assign variable="cantMeses" expression="6"/>
+            <output expression="&quot;Ingresar el capital que desea invertir: &quot;" newline="True"/>
+            <declare name="capital" type="Real" array="False" size=""/>
+            <input variable="capital"/>
+            <declare name="ganancia" type="Real" array="False" size=""/>
+            <declare name="capitalTotal" type="Real" array="False" size=""/>
+            <assign variable="ganancia" expression="(capital*(interes ^ cantMeses)) - capital"/>
+            <assign variable="capitalTotal" expression="capital * (interes^cantMeses)"/>
+            <output expression="&quot;La ganancia es de: &quot;" newline="True"/>
+            <output expression="ganancia" newline="True"/>
+            <output expression="&quot;Su capital total es: &quot;" newline="True"/>
+            <output expression="capitalTotal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

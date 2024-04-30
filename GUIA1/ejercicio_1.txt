@@ -1,0 +1,99 @@
+a) Enviar mensaje de voz por Whatsapp.
+		1. Agarrar el celular.
+		2. Si esta bloqueado, desbloquearlo. Si esta desbloqueado continuar al siguiente paso.
+		3. Buscar la aplicación de Whatsapp. Si no esta instalada, descargarla y registrarse.
+		4. Abrir Whatsapp.
+		5. Hacer click en la conversación a la que querramos enviarle el mensaje de vos, si no tenes ninguna iniciada hacer click en el boton + en la esquina superior derecha y elegir un contacto.
+		6. Al abrir la conversación, hacer click en el boton del microfono en la esquina inferior derecha y mantenerlo apretado.
+		7. Grabar el mensaje de voz.
+		8. Soltar el boton del microfono así se envia el mensaje.
+
+b) Cruzar una calle en una esquina con semáforos.
+		1. Mirar el semáforo peatonal.
+		2. Si el simbolo de la persona esta en blanco, cruzar. En caso contrario volver al paso 1.
+
+c) Lavarse las manos.
+		1. Acercarse hasta el lavamanos.
+		2. Abrir la canilla (tibia o fria).
+		3. Humedecerse las manos con el agua.
+		4. Ponerse jabon en las manos.
+		5. Frotarse las manos con el jabón hasta que haga espuma.
+		6. Frotarse la parte de atras de la mano.
+		7. Frotarse las uñas de la mano contra la palma contraria. Repetir con las dos manos.
+		8. Frotarse los pulgares de ambas manos.
+		9. Enguajarse con abundante agua.
+		10. Cerrar la canilla.
+		11. Cecarse las manos.
+
+d) Preparar un mate.
+		1. Conseguir: mate, bombilla para mate, yerba, termo y una pava.
+		2. Llenar la pava con agua y ponerla a calentar.
+		3. Mientras se calienta el agua, colocar la yerba dentro del mate (aproximadamente 3/4 del mismo).
+		4. Colocar la bombilla dentro del mate.
+		5. Una vez que hirvio el agua, pasarla a dentro del termo.
+		6. Cebar el mate.
+
+e) Realizar una publicación en instagram.
+		1. Agarrar el celular.
+		2. Si esta bloqueado, desbloquearlo. Si esta desbloqueado continuar al siguiente paso.
+		3. Abrir Instagram. Si no esta instalado descargarlo y crear una cuenta.
+		4. Hacer click en el botón + en la parte inferior de la pantalla.
+		5. Elegir la imagen a subir o hacer click en el botón de la cámara para sacar una foto en el momento.
+		6. Dar click al botón seguir.
+		7. Elegir si la imagen va a llevar filtro o no.
+		8. Dar click al botón seguir.
+		9. Escribir una descripción.
+		10. Dar click al botón publicar.
+
+f) Destapar una botella de cerveza.
+		1. Conseguir una cerveza.
+		2. Conseguir un destapador.
+		3. Deslizar la punta del destapador por debajo de la tapa de manera que el agarre quede por encima de la misma.
+		4. Hacer palanca hacia abajo.
+
+g) Poner una alarma en el reloj del celular.
+		1. Agarrar el celular.
+		2. Si esta bloqueado, desbloquearlo. Si esta desbloqueado continuar al siguiente paso.
+		3. Abrir la aplicación de reloj.
+		4. Hacer click en el icono de alarmas.
+		5. Hacer click en el icono de +.
+		6. Elegir el horario de la alarma.
+		7. Elegir el intervalo de repeticion.
+		8. Elegir el sonido.
+		9. Hacer click en el boton Guardar.
+
+h) Resolver la siguiente operación 4+2*3.
+		1. Separar en terminos.
+		2. Realizar 2*3.
+		3. Sumar 4+6.
+
+i) Pintar una pared.
+		1. Comprar pintura, rodillo, aguarrás y lija.
+		2. Si la pared se encuentra con manchas, lijarlas.
+		3. Abrir el tacho de pintura.
+		4. Sumergir el rodillo y escurrirlo.
+		5. Esparcir la pintura de manera uniforme por toda la pared.
+		6. Repetir el paso 5 hasta que quede a gusto.
+		7. Limpiar el rodillo con el aguarrás.
+
+j) Comprar una entrada de cine por Internet.
+		1. Agarrar el celular.
+		2. Si esta bloqueado, desbloquearlo. Si esta desbloqueado continuar al siguiente paso.
+		3. Chequear que este conectado a internet y si no esta conectado, conectarlo.
+		4. Ingresar a la app que permite navegar por internet, si no tiene ninguna descargala.
+		5. Ingresar la direccion web de la página.
+		6. Ingresar a su cuenta y si no tiene una, crearla.
+		7. Buscar la película deseada.
+		8. Hacer click en el nombre de la misma.
+		9. Elegir la sala de cine.
+		10. Hacer en click en continuar.
+		11. Hacer click en la función.
+		11. Elegir 1 en la cantidad de entradas.
+		12. Hacer click en continuar.
+		13. Elegir la ubicación.
+		14. Hacer click en continuar.
+		15. Elegir el medio de pago e ingresar los datos.
+		16. Hacer click enb continuar.
+		17. Checkear el mail con el voucher de las entradas.
+
+
