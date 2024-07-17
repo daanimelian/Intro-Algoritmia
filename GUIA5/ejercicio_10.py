@@ -17,7 +17,7 @@ recaudacion_total = 0
 
 while cant_espectadores != 0:
     cant_espectadores = int(input("Ingresar la cantidad de espectadores que fueron a ver la funcion. "
-                              "Para finalizar ingrese 0: "))
+                                  "Para finalizar ingrese 0: "))
     if cant_espectadores != 0:
         descuento = int(input("Ingresar si la funcion tiene descuento (1=Sí, 2=No): "))
 
@@ -32,11 +32,8 @@ while cant_espectadores != 0:
         recaudacion_total += recaudado_funcion
 
 if espectadores_total > 0:
-    porcentaje_descuento = ((espectadores_desc*100)/espectadores_total)
+    porcentaje_descuento = ((espectadores_desc * 100) / espectadores_total)
 
 print("La recaudacion total del complejo es de: ", recaudacion_total)
 print("Cantidad de espectadores con descuento: ", espectadores_desc)
 print("Porcentaje sobre el total de espectadores con descuento: ", porcentaje_descuento)
-
-
-

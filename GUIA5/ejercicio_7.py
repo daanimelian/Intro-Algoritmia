@@ -6,15 +6,14 @@ es_negativo = False
 
 numero = int(input("Ingrese el numero que desea invertir: "))
 
-#Si el numero es negativo, busco el modulo
+# Si el numero es negativo, busco el modulo
 if numero < 0:
     es_negativo = True
-    numero = int((numero**2)**(1/2))
+    numero = int((numero ** 2) ** (1 / 2))
 
 # Calculo cual es su mayor divisor multiplo de 10
 while numero // extension > 9:
     extension = extension * 10
-
 
 while numero > 0:
     # Divido el numero por el multiplo de 10 para ver digito por digito
