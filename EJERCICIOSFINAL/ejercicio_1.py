@@ -10,6 +10,7 @@
 
 legajos = []
 notas = []
+matriz_legajos_notas = [[], []]
 
 
 def carga_notas_fila(legajo, nota):
@@ -18,6 +19,14 @@ def carga_notas_fila(legajo, nota):
     notas.append(nota)
 
     return legajo, notas
+
+
+def carga_notas_fila_matriz(legajo, nota):
+    """"""
+    matriz_legajos_notas[0].append(legajo)
+    matriz_legajos_notas[1].append(nota)
+
+    return matriz_legajos_notas
 
 
 def validar_nota(nota):
@@ -85,6 +94,23 @@ def ordenar_lista_legajos(lista_legajos, lista_notas, asc=True):
     return lista_legajos, lista_notas
 
 
+def ordenar_legajos_matriz(matriz):
+    largo = len(matriz[0])
+
+    for i in range(largo - 1):
+        for j in range(i+1, largo):
+            if matriz[0][i] > matriz[0][j]:
+                aux_legajo = matriz[0][i]
+                matriz[0][i] = matriz[0][j]
+                matriz[0][j] = aux_legajo
+
+                aux_nota = matriz[1][i]
+                matriz[1][i] = matriz[1][j]
+                matriz[1][j] = aux_nota
+
+    return matriz
+
+
 def main():
     print("Ingrese el número de legajo de sus alumnos seguida de su nota, para finalizar ingrese -1 como legajo.")
 
@@ -97,12 +123,12 @@ def main():
             while nota_valida is False:
                 nota = int(input("Por favor ingresar una nota valida: "))
                 nota_valida = validar_nota(nota)
-            carga_notas_fila(legajo=legajo, nota=nota)
+            carga_notas_fila_matriz(legajo=legajo, nota=nota)
 
-    cant_aprobados, cant_desaprobados = cantidad_aprobados_desaprobados(notas)
-    nota_promedio_gral = nota_promedio(notas_totales=notas)
-    legajos_sup = legajos_sup_prom(promedio=nota_promedio_gral, legajos=legajos, notas_totales=notas)
-    lista_legajos_ord, lista_notas_ord = ordenar_lista_legajos(lista_legajos=legajos, lista_notas=notas)
+    cant_aprobados, cant_desaprobados = cantidad_aprobados_desaprobados(notas_totales=matriz_legajos_notas[1])
+    nota_promedio_gral = nota_promedio(notas_totales=matriz_legajos_notas[1])
+    legajos_sup = legajos_sup_prom(promedio=nota_promedio_gral, legajos=matriz_legajos_notas[0], notas_totales=matriz_legajos_notas[1])
+    matriz_ordenada = ordenar_legajos_matriz(matriz=matriz_legajos_notas)
 
     print("Cantidad de alumnos aprobados: ", cant_aprobados)
     print("Cantidad de alumnos desaprobados: ", cant_desaprobados)
@@ -111,9 +137,8 @@ def main():
     for i in range(0, len(legajos_sup)):
         print("    ", legajos_sup[i])
     print("El listado de alumnos y sus notas: ")
-    for i in range(0, len(lista_legajos_ord)):
-        print("    ", "Numero de legajo: ", lista_legajos_ord[i], "-", "Nota: ", lista_notas_ord[i])
+    for i in range(0, len(matriz_ordenada[0])):
+        print("    ", "Numero de legajo: ", matriz_ordenada[0][i], "-", "Nota: ", matriz_ordenada[1][i])
 
 
 main()
-
