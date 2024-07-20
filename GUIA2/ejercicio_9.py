@@ -10,6 +10,6 @@ porcentaje_venta = 0.5
 num_vendendor = int(input("Ingresar el numero del vendedor: "))
 cant_ventas = int(input("Ingresar la cantidad de ventas realizadas: "))
 valor_total = float(input("Ingresar el valor total de la venta: "))
-salario_total = salario + (cant_ventas * comision) + (porcentaje_venta*valor_total)
+salario_total = salario + (cant_ventas * comision) + (porcentaje_venta * valor_total)
 
 print("El salario total del vendedor ", num_vendendor, " es de: ", salario_total)

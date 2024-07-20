@@ -1,5 +1,6 @@
 """Leer un número entero e invertir las cifras que contiene. Imprimir por pantalla el
 número invertido. Tener en cuenta que el número puede ser negativo. Por ejemplo, si se ingresa 1234 debe mostrar 4321."""
+
 reversa = ""
 extension = 1
 es_negativo = False
@@ -9,7 +10,7 @@ numero = int(input("Ingrese el numero que desea invertir: "))
 # Si el numero es negativo, busco el modulo
 if numero < 0:
     es_negativo = True
-    numero = int((numero ** 2) ** (1 / 2))
+    numero = int((numero**2) ** (1 / 2))
 
 # Calculo cual es su mayor divisor multiplo de 10
 while numero // extension > 9:

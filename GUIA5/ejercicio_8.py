@@ -10,6 +10,7 @@ informe que contenga:
 · Importe total de sueldos por cada categoría.
 · Salario promedio
 """
+
 total_salarios = 0
 empleados_mejores_pagos = 0
 empleados_peores_pagos = 0
@@ -24,14 +25,22 @@ mejor_sueldo = 0
 peor_sueldo = 0
 primer_empleado = True
 while legajo != -1:
-    legajo = int(input("Ingrese el numero de legajo del trabajador. Para finalizar ingrese -1: "))
+    legajo = int(
+        input("Ingrese el numero de legajo del trabajador. Para finalizar ingrese -1: ")
+    )
     if legajo != -1:
         categoria = int(input("Ingrese la categoria del trabajador (1,2 o 3): "))
         while categoria != 1 and categoria != 2 and categoria != 3:
-            categoria = int(input("Categoria incorrecta. Ingrese la categoria del trabajador (1,2 o 3): "))
+            categoria = int(
+                input(
+                    "Categoria incorrecta. Ingrese la categoria del trabajador (1,2 o 3): "
+                )
+            )
         salario = int(input("Ingrese el salario del trabajador: "))
         while salario < 0:
-            salario = int(input("Salario incorrecto. Ingrese el salario del trabajador: "))
+            salario = int(
+                input("Salario incorrecto. Ingrese el salario del trabajador: ")
+            )
         if salario > 200000:
             empleados_mejores_pagos += 1
         if salario < 50000 and categoria == 3:
@@ -54,11 +63,30 @@ while legajo != -1:
 if cant_empleados > 0:
     salario_prom = total_salarios / cant_empleados
 
-print("· Importe total de salarios pagados por la empresa: $", total_salarios, "\n",
-      "· Cantidad de empleados que ganan más de $200000:", empleados_mejores_pagos, "\n",
-      "· Cantidad de empleados que ganan menos de $50000, cuya categoría sea 3:", empleados_peores_pagos, "\n",
-      "· Legajo del empleado que más gana: ", legajo_mejor_sueldo, "\n",
-      "· Sueldo más bajo: $", peor_sueldo, "\n",
-      "· Importe total de sueldos por cada categoría: Categoria 1 - $", salarios_categoria_1, "Categoria 2 - $",
-      salarios_categoria_2, "Categoria 3 - $", salarios_categoria_3, "\n",
-      "· Salario promedio: $", total_salarios, "\n")
+print(
+    "· Importe total de salarios pagados por la empresa: $",
+    total_salarios,
+    "\n",
+    "· Cantidad de empleados que ganan más de $200000:",
+    empleados_mejores_pagos,
+    "\n",
+    "· Cantidad de empleados que ganan menos de $50000, cuya categoría sea 3:",
+    empleados_peores_pagos,
+    "\n",
+    "· Legajo del empleado que más gana: ",
+    legajo_mejor_sueldo,
+    "\n",
+    "· Sueldo más bajo: $",
+    peor_sueldo,
+    "\n",
+    "· Importe total de sueldos por cada categoría: Categoria 1 - $",
+    salarios_categoria_1,
+    "Categoria 2 - $",
+    salarios_categoria_2,
+    "Categoria 3 - $",
+    salarios_categoria_3,
+    "\n",
+    "· Salario promedio: $",
+    total_salarios,
+    "\n",
+)

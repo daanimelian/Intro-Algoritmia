@@ -1,4 +1,4 @@
-#TODO: Usar banderas para menor y mayor precio
+# TODO: Usar banderas para menor y mayor precio
 menor_precio = 0
 mayor_precio = 0
 cant_tipo_instrumentos = 0
@@ -18,7 +18,7 @@ while nombre_instrumento != "fin":
         if precio_instrumento > mayor_precio or es_primer_instrumento:
             mayor_precio = precio_instrumento
             nombre_instrumento_caro = nombre_instrumento
-        es_primer_instrumento=False
+        es_primer_instrumento = False
         if stock_instrumento < stock_minimo:
             lista_instrumentos = lista_instrumentos + "-" + nombre_instrumento
         cant_total_instrumentos += stock_instrumento

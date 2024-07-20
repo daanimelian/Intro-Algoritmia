@@ -90,25 +90,34 @@ def ordenar_matriz_por_sup(matriz_depto):
 def main():
     expensa_m2 = int(input("Ingrese el valor de expensa por m2: "))
 
-    print("Ingrese el nro de depto seguido de su superficie en m2. Para finalizar ingrese -1 en nro de depto.")
+    print(
+        "Ingrese el nro de depto seguido de su superficie en m2. Para finalizar ingrese -1 en nro de depto."
+    )
     nro_depto = 0
     while nro_depto != -1:
         nro_depto = int(input("Ingrese el numero de depto: "))
         depto_valido = validar_nro_unidad(nro_depto)
         while depto_valido is False:
-            nro_depto = int(input("Numero de departamento duplicado. Ingrese el numero de depto correcto: "))
+            nro_depto = int(
+                input(
+                    "Numero de departamento duplicado. Ingrese el numero de depto correcto: "
+                )
+            )
             depto_valido = validar_nro_unidad(nro_depto)
 
         if nro_depto != -1:
             sup_depto = int(input("Ingrese la superficie del depto: "))
             sup_depto_valido = validar_superficie(sup_depto)
             while sup_depto_valido is False:
-                sup_depto = int(input("Superficie invalida. Ingrese la superficie del depto: "))
+                sup_depto = int(
+                    input("Superficie invalida. Ingrese la superficie del depto: ")
+                )
                 sup_depto_valido = validar_superficie(sup_depto)
 
             valor_expensa = expensa_m2 * sup_depto
-            ingresar_unidad_superficie_expensa(nro_unidad=nro_depto, sup=sup_depto,
-                                               valor_expensa=valor_expensa)
+            ingresar_unidad_superficie_expensa(
+                nro_unidad=nro_depto, sup=sup_depto, valor_expensa=valor_expensa
+            )
     matriz_depto_info_ordenada = ordenar_matriz_por_sup(matriz_depto_info)
 
     promedio_exp = promedio_expensas(matriz_depto_info[2])
@@ -117,7 +126,8 @@ def main():
 
     for i in range(len(matriz_depto_info_ordenada[0])):
         print(
-            f"El depto numero {matriz_depto_info_ordenada[0][i]} tiene una superficie de {matriz_depto_info_ordenada[1][i]} m2 y paga ${matriz_depto_info_ordenada[2][i]} de expensas.")
+            f"El depto numero {matriz_depto_info_ordenada[0][i]} tiene una superficie de {matriz_depto_info_ordenada[1][i]} m2 y paga ${matriz_depto_info_ordenada[2][i]} de expensas."
+        )
 
 
 main()

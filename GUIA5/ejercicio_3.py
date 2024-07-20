@@ -27,22 +27,29 @@ cant_ventas_sin_desc = 0
 while cant_solicitada > -1:
     cant_solicitada = int(input("Ingresar la cantidad solicitada del producto: "))
     while cant_solicitada < 0 and cant_solicitada != -1:
-        cant_solicitada = int(input("Cantidad incorrecta. Ingresar la cantidad solicitada del producto: "))
+        cant_solicitada = int(
+            input("Cantidad incorrecta. Ingresar la cantidad solicitada del producto: ")
+        )
     if cant_solicitada != -1:
         precio_base = float(input("Ingresar el precio base del producto: "))
         while precio_base < 0:
-            precio_base = float(input("Precio invalido. Ingresar el precio base del producto: "))
+            precio_base = float(
+                input("Precio invalido. Ingresar el precio base del producto: ")
+            )
         if cant_solicitada <= cant_primer_desc:
             venta = cant_solicitada * precio_base
             cant_ventas_sin_desc += 1
         elif cant_seg_desc < cant_solicitada <= 100:
             venta = (cant_primer_desc * precio_base) + (
-                    cant_solicitada - cant_primer_desc) * precio_base * valor_primer_desc
+                cant_solicitada - cant_primer_desc
+            ) * precio_base * valor_primer_desc
             cant_ventas_primer_desc += 1
         else:
-            venta = ((cant_primer_desc * precio_base) + (
-                    (cant_seg_desc - cant_primer_desc) * precio_base * valor_primer_desc) +
-                     (cant_solicitada - cant_seg_desc) * precio_base * valor_segundo_desc)
+            venta = (
+                (cant_primer_desc * precio_base)
+                + ((cant_seg_desc - cant_primer_desc) * precio_base * valor_primer_desc)
+                + (cant_solicitada - cant_seg_desc) * precio_base * valor_segundo_desc
+            )
             cant_ventas_primer_desc += 1
         if venta > 0:
             precio_promedio = float(venta / cant_solicitada)

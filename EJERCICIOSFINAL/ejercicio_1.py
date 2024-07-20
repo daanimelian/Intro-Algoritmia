@@ -98,7 +98,7 @@ def ordenar_legajos_matriz(matriz):
     largo = len(matriz[0])
 
     for i in range(largo - 1):
-        for j in range(i+1, largo):
+        for j in range(i + 1, largo):
             if matriz[0][i] > matriz[0][j]:
                 aux_legajo = matriz[0][i]
                 matriz[0][i] = matriz[0][j]
@@ -112,22 +112,34 @@ def ordenar_legajos_matriz(matriz):
 
 
 def main():
-    print("Ingrese el número de legajo de sus alumnos seguida de su nota, para finalizar ingrese -1 como legajo.")
+    print(
+        "Ingrese el número de legajo de sus alumnos seguida de su nota, para finalizar ingrese -1 como legajo."
+    )
 
     legajo = 0
     while legajo != -1:
         legajo = int(input("Ingrese el legajo del alumno: "))
         if legajo != -1:
-            nota = int(input("Ingresa la nota del alumno (debe ser un numero entero entre el 1 y el 10): "))
+            nota = int(
+                input(
+                    "Ingresa la nota del alumno (debe ser un numero entero entre el 1 y el 10): "
+                )
+            )
             nota_valida = validar_nota(nota)
             while nota_valida is False:
                 nota = int(input("Por favor ingresar una nota valida: "))
                 nota_valida = validar_nota(nota)
             carga_notas_fila_matriz(legajo=legajo, nota=nota)
 
-    cant_aprobados, cant_desaprobados = cantidad_aprobados_desaprobados(notas_totales=matriz_legajos_notas[1])
+    cant_aprobados, cant_desaprobados = cantidad_aprobados_desaprobados(
+        notas_totales=matriz_legajos_notas[1]
+    )
     nota_promedio_gral = nota_promedio(notas_totales=matriz_legajos_notas[1])
-    legajos_sup = legajos_sup_prom(promedio=nota_promedio_gral, legajos=matriz_legajos_notas[0], notas_totales=matriz_legajos_notas[1])
+    legajos_sup = legajos_sup_prom(
+        promedio=nota_promedio_gral,
+        legajos=matriz_legajos_notas[0],
+        notas_totales=matriz_legajos_notas[1],
+    )
     matriz_ordenada = ordenar_legajos_matriz(matriz=matriz_legajos_notas)
 
     print("Cantidad de alumnos aprobados: ", cant_aprobados)
@@ -138,7 +150,14 @@ def main():
         print("    ", legajos_sup[i])
     print("El listado de alumnos y sus notas: ")
     for i in range(0, len(matriz_ordenada[0])):
-        print("    ", "Numero de legajo: ", matriz_ordenada[0][i], "-", "Nota: ", matriz_ordenada[1][i])
+        print(
+            "    ",
+            "Numero de legajo: ",
+            matriz_ordenada[0][i],
+            "-",
+            "Nota: ",
+            matriz_ordenada[1][i],
+        )
 
 
 main()

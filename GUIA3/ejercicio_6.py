@@ -4,6 +4,7 @@ debe ser en tela, lo que incrementa el costo en $1200. Además, si el número de
 páginas sobrepasa las 600 se hace necesario un procedimiento especial de encuadernación que incrementa el costo en otros $3360. Desarrollar un programa
 que calcule el costo de un libro dado el número de páginas.
 """
+
 costo_basico = 5000
 incremento_tela = 1200
 incremento_especial = 3360

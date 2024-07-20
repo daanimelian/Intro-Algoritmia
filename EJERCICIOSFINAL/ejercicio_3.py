@@ -16,7 +16,7 @@ def validar_numero_competidores(numero_competidores):
     numero_competidores_str = str(numero_competidores)
     for i in range(len(numero_competidores_str)):
         if numero_competidores_str[i] == ".":
-            decimales = int(numero_competidores_str[i + 1:])
+            decimales = int(numero_competidores_str[i + 1 :])
     if 0 < decimales:
         es_valido = False
 
@@ -65,17 +65,27 @@ def tiempo_promedio(competidores_tiempo):
 
 
 def main():
-    cant_competidores = float(input("Ingresar la cantidad de competidores de la carrera: "))
+    cant_competidores = float(
+        input("Ingresar la cantidad de competidores de la carrera: ")
+    )
     comp_validos = validar_numero_competidores(cant_competidores)
     while comp_validos is False:
-        cant_competidores = float(input("Cantidad invalida. Ingresar la cantidad de competidores de la carrera: "))
+        cant_competidores = float(
+            input(
+                "Cantidad invalida. Ingresar la cantidad de competidores de la carrera: "
+            )
+        )
         comp_validos = validar_numero_competidores(cant_competidores)
 
     for i in range(int(cant_competidores)):
         numero_competidor = float(input("Ingrese el numero de competidor: "))
         comp_validos = validar_numero_competidores(numero_competidor)
         while comp_validos is False:
-            numero_competidor = float(input("Cantidad invalida. Ingresar la cantidad de competidores de la carrera: "))
+            numero_competidor = float(
+                input(
+                    "Cantidad invalida. Ingresar la cantidad de competidores de la carrera: "
+                )
+            )
             comp_validos = validar_numero_competidores(numero_competidor)
 
         print("Ingresar el tiempo del corredor.")
@@ -101,9 +111,19 @@ def main():
     else:
         print("El ganador no batio el record.")
 
-    horas_promedio, min_promedio, segundos_promedio = tiempo_promedio(competidores_info[1])
+    horas_promedio, min_promedio, segundos_promedio = tiempo_promedio(
+        competidores_info[1]
+    )
 
-    print("El tiempo promedio fue de: ", horas_promedio, " horas, ", min_promedio, " minutos y ", segundos_promedio, " segundos.")
+    print(
+        "El tiempo promedio fue de: ",
+        horas_promedio,
+        " horas, ",
+        min_promedio,
+        " minutos y ",
+        segundos_promedio,
+        " segundos.",
+    )
 
 
 main()

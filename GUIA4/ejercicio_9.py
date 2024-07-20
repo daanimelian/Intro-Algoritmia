@@ -12,4 +12,10 @@ while last_digit != -1:
     elif last_digit % 2 == 1 and last_digit != -1:
         odd_license_plate += 1
 
-print("En el dia de hoy circularon ", even_license_plate, "pantentes pares y ", odd_license_plate, "patentes impares.")
+print(
+    "En el dia de hoy circularon ",
+    even_license_plate,
+    "pantentes pares y ",
+    odd_license_plate,
+    "patentes impares.",
+)

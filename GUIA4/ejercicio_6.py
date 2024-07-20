@@ -9,6 +9,6 @@
 num = int(input("Ingrese un numero del cual quiera saber la tabla de multiplicar: "))
 mult = 1
 while mult <= 12:
-    res = num * mult # por perdida de decimales hacemos el res afuera
+    res = num * mult  # por perdida de decimales hacemos el res afuera
     print(res)
     mult += 1

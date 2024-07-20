@@ -4,7 +4,11 @@
 # imprima los N primeros términos de esta sucesión, como así también la suma de
 # los mismos.
 
-n = int(input("Ingrese la cantidad de numeros que quiera saber de la sucesion de fibonacci: "))
+n = int(
+    input(
+        "Ingrese la cantidad de numeros que quiera saber de la sucesion de fibonacci: "
+    )
+)
 suma = 0
 fib1 = 0
 fib2 = 1

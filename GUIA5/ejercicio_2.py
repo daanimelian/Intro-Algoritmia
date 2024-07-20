@@ -13,7 +13,9 @@ cant_aplazos = 0
 cant_alumnos = 0
 
 while legajo != -1:
-    legajo = int(input("Ingresar el legajo del alumno, para finalizar la lista escriba -1: "))
+    legajo = int(
+        input("Ingresar el legajo del alumno, para finalizar la lista escriba -1: ")
+    )
     if legajo != -1:
         nota = int(input("Ingrese la nota del alumno (entre 1 y 10): "))
         while nota < 1 or nota > 10:
@@ -29,10 +31,8 @@ while legajo != -1:
             cant_aprobado += 1
         cant_alumnos += 1
 
-porcentaje_aplazos = cant_aplazos*100/cant_alumnos
+porcentaje_aplazos = cant_aplazos * 100 / cant_alumnos
 
 print("La cantidad de alumnos desaprobados es: ", cant_desaprobado)
 print("La cantidad de alumnos aprobados es: ", cant_aprobado)
-print("El porcentaje de aplazos es del: ", porcentaje_aplazos, "%." )
-
-
+print("El porcentaje de aplazos es del: ", porcentaje_aplazos, "%.")
