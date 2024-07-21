@@ -1,0 +1,17 @@
+Dado el siguiente enunciado se solicita realizar y responder las siguientes
+consignas:
+En un experimento a realizarse en un laboratorio con vacunas se solicita,
+realizar un control de los valores aleatorios, para esto se pide desarrollar un
+programa que permita ingresar 2000 valores al azar de números enteros entre 1
+y 4092.
+Obtener el valor mínimo, el máximo y el lugar que ocupa cada uno en la
+secuencia aleatoria. Luego ordenar la lista de valores por algunos de los
+métodos conocidos y obtener el lugar que ocupa en la lista ordenada.
+a. Escribir el pseudocodigo correspondiente al enunciado
+b. Describir en lenguaje coloquial el funcionamiento del programa
+c. Indicar que variables serán utilizadas y para qué sirve cada una de las
+variables.
+d. Detallar las funciones utilizadas en el programa y que aplicación tendrán
+e. Evaluar y detectar los datos de entrada y los datos de salida
+
+
