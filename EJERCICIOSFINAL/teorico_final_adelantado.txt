@@ -14,4 +14,137 @@ variables.
 d. Detallar las funciones utilizadas en el programa y que aplicación tendrán
 e. Evaluar y detectar los datos de entrada y los datos de salida
 
+Función busquedaBinaria (Entero Lista lista[], Entero elemento)
+    Declarar Entero posicion
+    Declarar Entero izquierda
+    Declarar Entero derecha
+
+    Asignar izquierda = 0
+    Asignar derecha = largo(lista) - 1
+    Mientras derecha>=izquierda & posicion = -1
+        Declarar Entero centro
+
+        Asignar centro = (izquierda+derecha)//2
+        Si lista[centro] = elemento
+            Asignar posicion = centro
+        Falso:
+            Si lista[centro] > elemento
+                Asignar derecha = centro-1
+            Falso:
+                Asignar izquierda = centro+1
+            Fin
+        Fin
+    Fin
+Retorno Entero posicion
+
+Función encontrarMaximo (Entero Lista lista[])
+    Declarar Booleano elementoMaximoYPosicion
+    Declarar Entero elementoMaximo
+    Declarar Entero posicion
+
+    Asignar elementoMaximo = lista[0]
+    Asignar posicion = 0
+    Para i = 1 hasta largo(lista)
+        Si lista[i] > elementoMaximo
+            Asignar elementoMaximo = lista[i]
+            Asignar posicion = i
+        Fin
+    Fin
+    Asignar elementoMaximoYPosicion = [elementoMaximo, posicion]
+Retorno Booleano elementoMaximoYPosicion
+
+Función encontrarMinimo (Entero Matriz lista[])
+    Declarar Entero elementoMinimoYPosicion
+    Declarar Entero elementoMinimo
+    Declarar Entero posicion
+
+    Asignar elementoMinimo = lista[0]
+    Asignar posicion = 0
+    Para i = 1 hasta largo(lista)
+        Si lista[i] < elementoMinimo
+            Asignar elementoMinimo = lista[i]
+            Asignar posicion = i
+        Fin
+    Fin
+    Asignar elementoMinimoYPosicion = (elementoMinimo, posicion)
+Retorno Entero elementoMinimoYPosicion
+
+Función generarListaSecuencia (Entero largo)
+    Declarar Cadena secuencias
+
+    Para i = 0 hasta largo
+        Declarar Entero numRandom
+
+        Asignar numRandom = generarEnteroRandom(1,20)
+        Asignar secuencia = secuencia.append(numRandom)
+    Fin
+Retorno Cadena secuencias
+
+Función ordenarLista (Entero Matriz lista[])
+    Declarar Entero listaOrdenada
+    Declarar Entero largoLista
+
+    Asignar largoLista = largo(lista)
+    Para i = 0 hasta largo-1
+        Para j = i+1 hasta largo
+            Si lista[i] > lista[j]
+                Declarar Entero auxiliar
+
+                Asignar auxiliar = lista[i]
+                Asignar lista[i] = lista[j]
+                Asignar lista[j] = auxiliar
+            Fin
+        Fin
+    Fin
+Retorno Entero listaOrdenada
+
+
+
+
+Función Principal
+    Declarar Lista listaSecuencia
+
+    Llamar generarListaSecuencia
+    Asignar listaSecuencia = generarListaSecuencia
+    Declarar Lista elementoMaximoLista
+    Declarar Entero elementoMaximo
+    Declarar Entero elementoMaximoPosicion
+
+    Llamar encontrarMaximo(listaSecuencia)
+    Asignar elementoMaximoLista = encontrarMaximo(listaSecuencia)
+    Asignar elementoMaximo = elementoMaximoLista[0]
+    Asignar elementoMaximoPosicion = elementoMaximoLista[1]
+    Declarar Lista elementoMinimoLista
+    Declarar Entero elementoMinimo
+    Declarar Entero elementoMinimoPosicion
+
+    Llamar encontrarMinimo(listaSecuencia)
+    Asignar elementoMinimoLista = encontrarMinimo(listaSecuencia)
+    Asignar elementoMinimo = elementoMinimoLista[0]
+    Asignar elementoMinimoPosicion = elementoMinimoLista[1]
+    Salida "El elemento maximo es: "
+    Salida elementoMaximo
+    Salida "y su posicion es : "
+    Salida elementoMaximoPosicion
+    Salida "El elemento minimo es: "
+    Salida elementoMinimo
+    Salida "y su posicion es : "
+    Salida elementoMinimoPosicion
+    Declarar Lista listaSecuenciaOrdenada
+
+    Llamar ordenarLista(listaSecuencia)
+    Asignar listaSecuenciaOrdenada = ordenarLista(listaSecuencia)
+    Declarar Entero elementoMaximoPosicion
+
+    Llamar busquedaBinaria(listaSecuenciaOrdenada, elementoMaximo)
+    Asignar elementoMaximoPosicion = busquedaBinaria(listaSecuenciaOrdenada, elementoMaximo)
+    Declarar Entero elementoMinimoPosicion
+
+    Llamar busquedaBinaria(listaSecuenciaOrdenada, elementoMinimo)
+    Asignar elementoMinimoPosicion = busquedaBinaria(listaSecuenciaOrdenada, elementoMinimo)
+    Salida "La posicion del elemento maximo en la lista ordenada es : "
+    Salida elementoMaximoPosicion
+    Salida "La posicion del elemento minimo en la lista ordenada es : "
+    Salida elementoMinimoPosicion
+Fin
 
