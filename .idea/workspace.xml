@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="78b56350-44df-4f77-bdfb-d517b020a40f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/EJERCICIOSFINAL/ejercicio_tipo_final_5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EJERCICIOSFINAL/ejercicio_tipo_final_4.py" beforeDir="false" afterPath="$PROJECT_DIR$/EJERCICIOSFINAL/ejercicio_tipo_final_4.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2fuxw5hONU10Z1iN7laiKCCOAnF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.ejercicio_4.executor": "Run",
+    "Python.ejercicio_5.executor": "Run",
+    "Python.ejercicio_7.executor": "Run",
+    "Python.ejercicio_final_adelantado.executor": "Run",
+    "Python.ejercicio_tipo_final_1.executor": "Run",
+    "Python.ejercicio_tipo_final_4.executor": "Run",
+    "Python.simulacro.executor": "Run",
+    "Python.simulacro_2.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "practica",
+    "last_opened_file_path": "C:/Users/melia/Desktop/Facultad/Testing/TP-Testing",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-50da183f06c8-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13135.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="78b56350-44df-4f77-bdfb-d517b020a40f" name="Changes" comment="" />
+      <created>1714665000284</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1714665000284</updated>
+      <workItem from="1714665001401" duration="7579000" />
+      <workItem from="1715898026977" duration="4096000" />
+      <workItem from="1716508139712" duration="2335000" />
+      <workItem from="1721497295401" duration="17766000" />
+      <workItem from="1721918532147" duration="2237000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/EJERCICIOSFINAL/ejercicio_5.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/EJERCICIOSFINAL/ejercicio_final_adelantado.py</url>
+          <line>83</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/EJERCICIOSFINAL/ejercicio_final_adelantado.py</url>
+          <line>89</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/EJERCICIOSFINAL/ejercicio_tipo_final_1.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/EJERCICIOSFINAL/ejercicio_tipo_final_1.py</url>
+          <line>32</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Intro_Algoritmia$simulacro_2.coverage" NAME="simulacro_2 Coverage Results" MODIFIED="1714666586060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Intro_Algoritmia$ejercicio_tipo_final_1.coverage" NAME="ejercicio_tipo_final_1 Coverage Results" MODIFIED="1721783636809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EJERCICIOSFINAL" />
+    <SUITE FILE_PATH="coverage/Intro_Algoritmia$simulacro.coverage" NAME="simulacro Coverage Results" MODIFIED="1714669948918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Intro_Algoritmia$ejercicio_4.coverage" NAME="ejercicio_4 Coverage Results" MODIFIED="1721501672358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EJERCICIOSFINAL" />
+    <SUITE FILE_PATH="coverage/Intro_Algoritmia$ejercicio_final_adelantado.coverage" NAME="ejercicio_final_adelantado Coverage Results" MODIFIED="1721780857215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EJERCICIOSFINAL" />
+    <SUITE FILE_PATH="coverage/Intro_Algoritmia$ejercicio_5.coverage" NAME="ejercicio_5 Coverage Results" MODIFIED="1721504760313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EJERCICIOSFINAL" />
+    <SUITE FILE_PATH="coverage/Intro_Algoritmia$ejercicio_7.coverage" NAME="ejercicio_7 Coverage Results" MODIFIED="1716036797924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GUIA7" />
+    <SUITE FILE_PATH="coverage/Intro_Algoritmia$ejercicio_tipo_final_4.coverage" NAME="ejercicio_tipo_final_4 Coverage Results" MODIFIED="1721920247197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EJERCICIOSFINAL" />
+  </component>
+</project>

@@ -35,18 +35,18 @@ def calcular_correctos_y_aproximados(lista_num_real, lista_num_adivinado):
 
     for i in range(len(lista_num_real)):
         if lista_num_real[i] == lista_num_adivinado[i]:
-            correctos +=1
+            correctos += 1
         else:
             lista_posibles_aprox_adv.append(lista_num_adivinado[i])
             lista_posibles_aprox_real.append(lista_num_real[i])
 
     for j in range(len(lista_posibles_aprox_real)):
-        h=0
+        h = 0
         while h < len(lista_posibles_aprox_adv):
             if lista_posibles_aprox_real[j] == lista_posibles_aprox_adv[h]:
-                aproximados +=1
+                aproximados += 1
                 h = len(lista_posibles_aprox_adv)
-            h+=1
+            h += 1
 
     return correctos, aproximados
 
@@ -84,16 +84,29 @@ def main():
     print("Bienvenidos al juego de adivinanzas.")
     num_real = generar_num_aleatorio()
     num_real_lista = de_num_a_lista(num_real)
-    num_adivinado = int(input("Ingrese el numero que crea correcto, para finalizar ingresar -1: "))
+    num_adivinado = int(
+        input("Ingrese el numero que crea correcto, para finalizar ingresar -1: ")
+    )
     num_adivinado_lista = de_num_a_lista(num_adivinado)
     seguir_juego = True
     while seguir_juego is True:
         print(num_real)
         intentos = 1
         while num_adivinado != num_real and num_adivinado != -1:
-            num_correctos, num_aproximados = calcular_correctos_y_aproximados(num_real_lista, num_adivinado_lista)
-            print("Numeros correctos: ", num_correctos, " y numeros aproximados: ", num_aproximados)
-            num_adivinado = int(input("Ingrese el numero que crea correcto, para finalizar ingresar -1: "))
+            num_correctos, num_aproximados = calcular_correctos_y_aproximados(
+                num_real_lista, num_adivinado_lista
+            )
+            print(
+                "Numeros correctos: ",
+                num_correctos,
+                " y numeros aproximados: ",
+                num_aproximados,
+            )
+            num_adivinado = int(
+                input(
+                    "Ingrese el numero que crea correcto, para finalizar ingresar -1: "
+                )
+            )
             num_adivinado_lista = de_num_a_lista(num_adivinado)
             intentos += 1
 
@@ -114,14 +127,24 @@ def main():
                 else:
                     rango = len(matriz_jugadores[0])
                 for i in range(rango):
-                    print("| ", matriz_jugadores_ordenada[0][i], " | ", matriz_jugadores[1][i], " |")
+                    print(
+                        "| ",
+                        matriz_jugadores_ordenada[0][i],
+                        " | ",
+                        matriz_jugadores[1][i],
+                        " |",
+                    )
 
         respuesta = input("Queres seguir jugando? Ingresar S/N: ")
         if respuesta == "S" or respuesta == "s":
             seguir_juego = True
             num_real = generar_num_aleatorio()
             num_real_lista = de_num_a_lista(num_real)
-            num_adivinado = int(input("Ingrese el numero que crea correcto, para finalizar ingresar -1: "))
+            num_adivinado = int(
+                input(
+                    "Ingrese el numero que crea correcto, para finalizar ingresar -1: "
+                )
+            )
             num_adivinado_lista = de_num_a_lista(num_adivinado)
         elif respuesta == "N" or respuesta == "n":
             seguir_juego = False

@@ -1,5 +1,6 @@
 # Ordenamiento de burbuja
 
+
 def bubblesort(lista):
     intercambio = True
     while intercambio:
@@ -35,7 +36,9 @@ def insertionsort(lista):
             j -= 1
             print(lista)
         lista[j + 1] = item_to_insert
-        print("------------------------------------------------------------------------")
+        print(
+            "------------------------------------------------------------------------"
+        )
         print(lista)
     return lista
 

@@ -2,6 +2,7 @@
 # es decir que la última cifra pase a ser la primera, la penúltima pase a ser la segunda, etc. Por ejemplo, si la función
 # recibe como parámetro el número 123, debe devolver 321.
 
+
 def invertir(num):
     num_invertido = 0
     while num > 0:
@@ -20,6 +21,7 @@ invertir(123)
 # elementos), y devolver como valor de retorno un entero indicando cuántos elementos contiene el vector luego del
 # proceso. Puede utilizar funciones auxiliares en caso necesario, y utilizar cualquiera de los métodos de
 # ordenamiento estudiados.
+
 
 def ordenar_vector_bubble(vector):
     intercambio = True
@@ -77,5 +79,7 @@ def eliminar_repetido(vector):
     return nueva_lista
 
 
-lista_ordenada = eliminar_repetido([15, 25, 13, 10, 90, 1, 4, 3, 7, 6, 5, 8, 9, 0, 4, 10, 5, 2, 22, 11, 67])
+lista_ordenada = eliminar_repetido(
+    [15, 25, 13, 10, 90, 1, 4, 3, 7, 6, 5, 8, 9, 0, 4, 10, 5, 2, 22, 11, 67]
+)
 print(lista_ordenada)

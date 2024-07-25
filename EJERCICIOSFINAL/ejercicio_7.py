@@ -48,13 +48,11 @@ def detectar_secuencia_mas_larga(lista):
                 largo_lista = 0
             else:
                 if len(secuencias_largas[0]) < largo_lista:
-                        secuencias_largas = []
-                        secuencias_largas.append(secuencia)
-                        largo_lista = 0
+                    secuencias_largas = []
+                    secuencias_largas.append(secuencia)
+                    largo_lista = 0
             secuencia = []
     return secuencias_largas
-
-
 
 
 def detectar_entero(numero):
@@ -86,7 +84,6 @@ def main():
     print("Secuencias mas largas: ")
     for i in range(len(secuencias_largas)):
         print(secuencias_largas[i], end=" ")
-
 
 
 main()

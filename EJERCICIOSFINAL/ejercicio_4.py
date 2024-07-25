@@ -42,7 +42,9 @@ def ordenar_matriz(matriz):
 def main():
     print("Bienvenidos al juego de adivinanzas.")
     num_real = generar_num_aleatorio()
-    num_adivinado = int(input("Ingrese el numero que crea correcto, para finalizar ingresar -1: "))
+    num_adivinado = int(
+        input("Ingrese el numero que crea correcto, para finalizar ingresar -1: ")
+    )
     seguir_juego = True
     while seguir_juego is True:
         print(num_real)
@@ -53,7 +55,11 @@ def main():
             else:
                 print("El numero es mas grande, volve a probar!")
 
-            num_adivinado = int(input("Ingrese el numero que crea correcto, para finalizar ingresar -1: "))
+            num_adivinado = int(
+                input(
+                    "Ingrese el numero que crea correcto, para finalizar ingresar -1: "
+                )
+            )
             intentos += 1
 
         if num_adivinado == num_real:
@@ -73,13 +79,23 @@ def main():
                 else:
                     rango = len(matriz_jugadores[0])
                 for i in range(rango):
-                    print("| ", matriz_jugadores_ordenada[0][i], " | ", matriz_jugadores[1][i], " |")
+                    print(
+                        "| ",
+                        matriz_jugadores_ordenada[0][i],
+                        " | ",
+                        matriz_jugadores[1][i],
+                        " |",
+                    )
 
         respuesta = input("Queres seguir jugando? Ingresar S/N: ")
         if respuesta == "S" or respuesta == "s":
             seguir_juego = True
             num_real = generar_num_aleatorio()
-            num_adivinado = int(input("Ingrese el numero que crea correcto, para finalizar ingresar -1: "))
+            num_adivinado = int(
+                input(
+                    "Ingrese el numero que crea correcto, para finalizar ingresar -1: "
+                )
+            )
         elif respuesta == "N" or respuesta == "n":
             seguir_juego = False
 

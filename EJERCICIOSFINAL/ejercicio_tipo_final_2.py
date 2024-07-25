@@ -1,5 +1,5 @@
 # Cargar una lista con 30 valores, generados aleatoriamente y que no se repitan, comprendidos entre 1 y 70
-#[1, 2, 3, 4, 6, 12, 14, 17, 18, 19, 21, 23, 24, 28, 30, 32, 33, 35, 37, 42, 45, 46, 52, 53, 54, 56, 59, 65, 66, 69]
+# [1, 2, 3, 4, 6, 12, 14, 17, 18, 19, 21, 23, 24, 28, 30, 32, 33, 35, 37, 42, 45, 46, 52, 53, 54, 56, 59, 65, 66, 69]
 # Ingresar un dato por teclado, el que deberá estar comprendido entre los valores indicados.
 #
 # Buscarlo en la lista obtenido utilizando la búsqueda binaria.
@@ -43,11 +43,11 @@ def busqueda_binaria(lista, elemento):
     derecha = len(lista) - 1
     indice = -1
 
-    while izquierda<=derecha and indice==-1:
-        centro = (izquierda+derecha) // 2
+    while izquierda <= derecha and indice == -1:
+        centro = (izquierda + derecha) // 2
         if elemento == lista[centro]:
-            indice=centro
-        elif elemento>lista[centro]:
+            indice = centro
+        elif elemento > lista[centro]:
             izquierda = centro + 1
 
         else:
@@ -55,9 +55,10 @@ def busqueda_binaria(lista, elemento):
 
     return indice
 
-valores=[]
+
+valores = []
 while len(valores) < 30:
-    num_aleatorio = random.randint(1,70)
+    num_aleatorio = random.randint(1, 70)
     if len(valores) == 0:
         valores.append(num_aleatorio)
     else:
@@ -72,7 +73,9 @@ while indice_valor == -1:
     valor_a_encontrar = int(input("Ingrese un numero entero entre 1 y 70: "))
 
     while valor_a_encontrar < 1 or valor_a_encontrar > 70:
-        valor_a_encontrar = int(input("Valor incorrecto. Ingrese un numero entero entre 1 y 70: "))
+        valor_a_encontrar = int(
+            input("Valor incorrecto. Ingrese un numero entero entre 1 y 70: ")
+        )
 
     valores_ord_final = ordenar_lista(valores)
     print(valores_ord_final)
@@ -86,5 +89,3 @@ while indice_valor == -1:
             print("Es un numero deficiente")
         else:
             print("No es un numero deficiente")
-
-

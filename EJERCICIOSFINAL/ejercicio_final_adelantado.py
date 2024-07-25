@@ -13,11 +13,17 @@ import random
 def definir_rangos_valores():
     rango_inferior = -2534
     while rango_inferior > -8 or rango_inferior < -2534:
-        rango_inferior = int(input("Rango inferior incorrecto. Ingrese el rango inferior: "))
+        rango_inferior = int(
+            input("Rango inferior incorrecto. Ingrese el rango inferior: ")
+        )
 
     rango_superior = -8
-    while rango_inferior > rango_superior or rango_superior > -8 or rango_superior < -2534:
-        rango_superior = int(input("Rango superior incorrecto. Ingrese el rango superior: "))
+    while (
+        rango_inferior > rango_superior or rango_superior > -8 or rango_superior < -2534
+    ):
+        rango_superior = int(
+            input("Rango superior incorrecto. Ingrese el rango superior: ")
+        )
 
     return rango_superior, rango_inferior
 
@@ -103,13 +109,18 @@ def busqueda_binaria(lista, elemento):
 def main():
     n = 2
     while n < 0:
-        n = int(input("Numero incorrecto. Ingresar el numero de ejecuciones del programa: "))
+        n = int(
+            input("Numero incorrecto. Ingresar el numero de ejecuciones del programa: ")
+        )
 
     for i in range(n):
 
         lista_valores = generar_valores_aleatorios()
         lista_valores_ordenada = ordenar_lista(lista_valores)
-        print("El mayor elemento encontrado de la lista es: ", lista_valores_ordenada[len(lista_valores_ordenada)-1])
+        print(
+            "El mayor elemento encontrado de la lista es: ",
+            lista_valores_ordenada[len(lista_valores_ordenada) - 1],
+        )
         num_pares, num_impares = num_pares_impares(lista_valores_ordenada)
         num_mult_10 = valores_mult_de_10(num_pares)
 
@@ -125,21 +136,35 @@ def main():
 
         print("")
 
-        print("Se encontraron ", len(num_mult_10), " numeros multiplos de 10 y son: ", end=" ")
+        print(
+            "Se encontraron ",
+            len(num_mult_10),
+            " numeros multiplos de 10 y son: ",
+            end=" ",
+        )
         for i in range(len(num_mult_10)):
             print(num_mult_10[i], end=" ")
 
         rango_sup_par, rango_inf_par = rango_en_lista(num_pares)
         print("")
-        print("El rango de numeros pares es de ", rango_inf_par, " hasta ", rango_sup_par)
-        elemento = int(input("Ingrese un numero dentro del rango para saber si esta o no en la lista: "))
+        print(
+            "El rango de numeros pares es de ", rango_inf_par, " hasta ", rango_sup_par
+        )
+        elemento = int(
+            input(
+                "Ingrese un numero dentro del rango para saber si esta o no en la lista: "
+            )
+        )
         indice = busqueda_binaria(num_pares, elemento)
         if indice == -1:
             print("El numero no se encuentra dentro de la lista.")
         else:
             print("El numero se encuentra dentro de la lista!")
         print(" ")
-        print(" ------------------------------------------------------------------------------------------- ")
+        print(
+            " ------------------------------------------------------------------------------------------- "
+        )
         print(" ")
+
 
 main()

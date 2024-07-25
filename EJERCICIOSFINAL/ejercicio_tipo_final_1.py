@@ -23,7 +23,7 @@ lista_resultados = []
 
 def realizar_cuenta(numero):
     if numero % 2 == 0:
-        numero = (numero / 2)
+        numero = numero / 2
     else:
         numero = (numero * 3) + 1
 
@@ -77,7 +77,6 @@ print("La lista de num es: ", len(lista_resultados), " y son: ", end=" ")
 for i in range(len(lista_resultados)):
     print(lista_resultados[i], end=" ")
 print("")
-
 
 
 lista_ordenada = ordenar_lista(lista_resultados, asc=True)
